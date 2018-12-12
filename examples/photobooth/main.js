@@ -16,10 +16,7 @@
 
 'use strict';
 
-const carlo = require('carlo');
-const fs = require('fs');
-const path = require('path');
-const os = require('os');
+const carlo = require('carlo');const fs = require('fs');const path = require('path');const os = require('os');
 
 (async () => {
   let app;
