@@ -17,18 +17,15 @@
 'use strict';
 
 const carlo = require('carlo');
-const os = require('os');
-const path = require('path');
+const os = require('os'); const path = require('path');
 const si = require('systeminformation');
 
 async function run() {
   let app;
-  try {
-    app = await carlo.launch(
+  try {app = await carlo.launch(
         {
           bgcolor: '#2b2e3b',
-          title: 'Systeminfo App',
-          width: 1000,
+          title: 'Systeminfo App', width: 1000,
           height: 500,
           channel: ['canary', 'stable'],
           icon: path.join(__dirname, '/app_icon.png'),
